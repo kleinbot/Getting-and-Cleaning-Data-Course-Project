@@ -20,6 +20,6 @@ Variables
 			These variables have the same names as the original datasets but in the context of HAR_Averages_by_Activity_by_Subject.txt are average values of the mean and std measurements of the HAR experiment per Activity per Subject. 
 			
 Transformations
-	The tidy dataset was developed from the original HAR datasets by using the dplyr and data.table pakages of R; clipping together X_test.txt, y_test.txt, subject_test.txt, X_train.txt, y_train.txt, subject_train.txt, features.txt and activity_labels.txt; selecting only the Activity column, Subject column and all mean and standard deviation columns; merging in the descriptive names of activity_labels.txt; using melt and dcast to produce the harAvg data table. All mean and std measurements were transformed into average mean and std measurements in this process.
+	The tidy dataset was developed from the original HAR datasets by using the dplyr and data.table packages of R; clipping together X_test.txt, y_test.txt, subject_test.txt, X_train.txt, y_train.txt, subject_train.txt, features.txt and activity_labels.txt; selecting only the Activity column, Subject column and all mean and standard deviation columns; merging in the descriptive names of activity_labels.txt; using melt and dcast to produce the harAvg data table. All mean and std measurements were transformed into average mean and std measurements in this process.
 	
 	harAvg was written to HAR_Averages_by_Activity_by_Subject.txt for presentation.
