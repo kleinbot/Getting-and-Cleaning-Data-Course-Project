@@ -65,6 +65,6 @@ harMelt <- melt(har_act_means_stds,id=1:2,
 
 harAvg <- dcast.data.table(harMelt, Activity+Subject ~ variable,mean)
 
-write.table(harAvg,"./HAR_Averages_by_Activity_by_Subject.txt")
+write.table(harAvg,"./HAR_Averages_by_Activity_by_Subject.txt",row.name=FALSE)
 
 
